@@ -1,0 +1,60 @@
+{
+  "name": "bio-utils",
+  "version": "0.0.1",
+  "description": "Library of ReactJS components for meditation/relaxation",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "karma start --auto-watch --no-single-run",
+    "examples:dev": "npm run test & npm run examples",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile",
+    "examples": "webpack-dev-server --port 8000  --config examples/webpack.config.js --content-base examples/src --inline --hot --public-path '/assets/'"
+  },
+  "keywords": [
+    "react-component"
+  ],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^0.13.3",
+    "react-tween-state": "0.0.5"
+  },
+  "devDependencies": {
+    "babel": "^5.5.8",
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+    "bootstrap": "^3.3.4",
+    "bootstrap-webpack": "0.0.3",
+    "css-loader": "^0.14.5",
+    "file-loader": "^0.8.4",
+    "howler": "^1.1.26",
+    "imports-loader": "^0.6.4",
+    "jquery": "^2.1.4",
+    "karma": "~0.12.36",
+    "karma-chai-sinon": "^0.1.5",
+    "karma-chrome-launcher": "~0.1.12",
+    "karma-firefox-launcher": "~0.1.6",
+    "karma-jasmine": "~0.3.5",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "~0.2.0",
+    "karma-script-launcher": "~0.1.0",
+    "karma-spec-reporter": "0.0.19",
+    "karma-webpack": "~1.5.1",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "node-libs-browser": "^0.5.2",
+    "react": "^0.13.3",
+    "react-bootstrap": "^0.23.3",
+    "react-hot-loader": "^1.2.7",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "histogramjs": "0.0.1",
+    "imports-loader": "^0.6.4",
+    "jstat": "^1.1.5",
+    "lodash": "^3.9.3"
+  }
+}
