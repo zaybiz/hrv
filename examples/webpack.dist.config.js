@@ -32,7 +32,7 @@ module.exports = {
       'styles': __dirname + '/src/styles',
       'mixins': __dirname + '/src/mixins',
       'components': __dirname + '/src/components/',
-      'bio-utils$': __dirname  + '/../src',
+      'openbio-hrv$': __dirname  + '/../src',
     }
   },
 

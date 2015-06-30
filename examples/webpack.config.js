@@ -34,7 +34,7 @@ module.exports = {
       'styles': __dirname + '/src/styles',
       'mixins': __dirname + '/src/mixins',
       'components': __dirname + '/src/components/',
-      'bio-utils$': process.cwd() + '/src',
+      'openbio-hrv$': process.cwd() + '/src',
     }
   },
   module: {
@@ -65,14 +65,14 @@ module.exports = {
         test: /\.svg$/,
         loader: "file-loader"
       },
-      {
-          test: require.resolve("jStat"),
-          loader: "imports?this=>window!exports?jStat"
-      },
-      {
-          test: require.resolve("histogramjs"),
-          loader: "imports?this=>window"
-      }
+      // {
+      //     test: require.resolve("jStat"),
+      //     loader: "imports?this=>window!exports?jStat"
+      // },
+      // {
+      //     test: require.resolve("histogramjs"),
+      //     loader: "imports?this=>window"
+      // }
     ]
   },
 

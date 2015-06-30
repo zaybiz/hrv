@@ -54,7 +54,7 @@
   "dependencies": {
     "histogramjs": "0.0.1",
     "imports-loader": "^0.6.4",
-    "jstat": "^1.1.5",
+    "jStat": "zaybiz/jstat#modulize",
     "lodash": "^3.9.3"
   }
 }
