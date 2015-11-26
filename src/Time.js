@@ -1,5 +1,5 @@
 var _ = require('lodash');
-var jStat = require('jStat');
+var jStat = require('jStat').jStat;
 var hist = require('histogramjs')
 
 var TimeMeasures = {
@@ -46,7 +46,6 @@ var TimeMeasures = {
     var pNN = (nn/(points.length -1)) * 100;
     return pNN;
   },
-  //TODO: Differs from ghrv slightly
   getMRR: function(points){
     return jStat.mean(points)
   },
